@@ -43,8 +43,9 @@ mongo = PyMongo(app)
 @app.route('/')
 @app.route('/index')
 def index():
-    collection = mongo.db.library
-    books = collection.find({})
+#     collection = mongo.db.library
+#     books = collection.find({})
+    books = {}
     return render_template('index.html', books = books, genres=genres)
 
 #GENRE Variable Route
