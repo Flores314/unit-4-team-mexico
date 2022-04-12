@@ -30,7 +30,7 @@ app = Flask(__name__)
 app.config['MONGO_DBNAME'] = 'database'
 
 # URI of database
-app.config['MONGO_URI'] = "mongodb+srv://admin:"+os.environ.get('MONGO_PWD')+"@cluster0.nig7j.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+app.config['MONGO_URI'] = "mongodb+srv://admin:"+os.environ.get('PASSWORD')+"@cluster0.nig7j.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 
 #Initialize PyMongo
 mongo = PyMongo(app)
